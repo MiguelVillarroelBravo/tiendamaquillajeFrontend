@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Editar Producto - Norbert</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Caacupe+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="js/validaciones.js"></script>
+</head>
+<body>
+
+    <div id="contenedor_admin">
+
+        <!-- Menú lateral -->
+        <nav id="menu_lateral">
+            <p id="nombre_sitio">Norbert</p>
+
+            <ul>
+                <li><a href="homeAdmin.html">Dashboard</a></li>
+            </ul>
+
+            <hr>
+
+            <ul>
+                <li><a href="Producto.html">Productos</a></li>
+                <li><a href="usuario.html">Usuarios</a></li>
+            </ul>
+
+            <hr>
+
+            <ul>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="envios.html">Envíos</a></li>
+                <li><a href="devoluciones.html">Devoluciones</a></li>
+            </ul>
+
+            <hr>
+
+            <ul>
+                <li><a href="reportes.html">Reportes</a></li>
+            </ul>
+
+            <hr>
+
+            <button type="button">Cerrar sesión</button>
+
+            <img id="imagen_admin" src="imagenes/ImagenTienda.png" alt="Ilustración panel administrador Norbert">
+        </nav>
+
+        <!-- Contenido principal -->
+        <div id="contenido_admin">
+            <h1 id="titulo_productos">Editar Producto</h1>
+            <p id="intro_productos">Modifica la información del producto seleccionado y guarda los cambios.</p>
+
+            <form id="form_producto">
+                <fieldset>
+                    <legend>Editar Datos del Producto</legend>
+                    
+                    <label for="campo_nombre">Nombre del Producto:</label>
+                    <input type="text" name="campo_nombre" id="campo_nombre" value="Labial Rojo Mate">
+                    <span class="error" id="mensaje_campo_nombre"></span><br><br>
+                    
+                    <label for="campo_precio">Precio:</label>
+                    <input type="text" name="campo_precio" id="campo_precio" value="5000">
+                    <span class="error" id="mensaje_campo_precio"></span><br><br>
+                    
+                    <label for="campo_categoria">Categoría:</label>
+                    <select name="campo_categoria" id="campo_categoria">
+                        <option value="labios" selected>Labios</option>
+                        <option value="ojos">Ojos</option>
+                        <option value="rostro">Rostro</option>
+                    </select><br><br>
+                    
+                    <button type="button" onclick="procesar_producto()">Actualizar Producto</button>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
