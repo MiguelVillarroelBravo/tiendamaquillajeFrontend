@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Iniciar Sesión - Norbert</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Caacupe+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="js/validaciones.js"></script>
+</head>
+<body>
+
+
+    <div id="header_tienda">
+        <p id="nombre_sitio">Norbert</p>
+
+        <p id="menu_tienda">
+            <a href="pagina_principal_home.html">Home</a> |
+            <a href="productos.html">Productos</a> |
+            <a href="nosotros.html">Nosotros</a> |
+            <a href="blogs.html">Blogs</a> |
+            <a href="contacto.html">Contacto</a>
+        </p>
+
+        <div id="carrito_tienda">
+            <a href="carrito.html" class="boton_carrito">🛒 Cart (0)</a>
+        </div>
+    </div>
+
+
+
+    <!-- Enlaces de usuario -->
+    <div id="enlaces_usuario">
+        <a href="iniciar_sesion.html">Iniciar sesión</a> | 
+        <a href="registro_usuario.html">Registrar usuario</a>
+    </div>
+
+
+
+    <!-- Sección del logo y marca -->
+    <div id="cabecera_login">
+        <img src="imagenes/ImagenTienda.png" alt="Logo Norbert" id="logo_login">
+        <h1 id="titulo_empresa_login">Norbert</h1>
+    </div>
+
+
+
+    <!-- Formulario de Iniciar Sesión -->
+    <div id="contenedor_formulario_login">
+        <form id="form_login_cliente">
+            <fieldset class="caja_login">
+                <legend class="titulo_caja_login">inicio de sesión</legend>
+
+                <label for="campo_correo_login">CORREO</label>
+                <input type="text" id="campo_correo_login" name="campo_correo_login">
+                <span class="error" id="mensaje_campo_correo_login"></span><br><br>
+
+                <label for="campo_clave_login">CONTRASEÑA</label>
+                <input type="password" id="campo_clave_login" name="campo_clave_login">
+                <span class="error" id="mensaje_campo_clave_login"></span><br><br>
+
+                <div class="centrar_boton">
+                    <button type="button" onclick="validar_login()" class="boton_iniciar_sesion">Iniciar sesión</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+
+    
+    <!-- Pie de página -->
+    <div id="footer_tienda">
+        <div class="col_footer">
+            <p><strong>Norbert</strong></p>
+            <p>VISA | MC | AMEX</p>
+        </div>
+
+        <div class="col_footer">
+            <p>
+                <a href="productos.html?cat=labios">Labios</a> | 
+                <a href="productos.html?cat=rostro">Rostro</a> | 
+                <a href="productos.html?cat=ojos">Ojos</a>
+            </p>
+        </div>
+
+        <div class="col_footer">
+            <p>¡Boletín de noticias!</p>
+            <form action="#">
+                <input type="text" placeholder="Ingresa tu email">
+                <button type="button">Suscribirse</button>
+            </form>
+        </div>
+
+        <div style="clear: both;"></div>
+    </div>
+
+</body>
+</html>
