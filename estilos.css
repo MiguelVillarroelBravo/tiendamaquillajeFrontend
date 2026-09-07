@@ -1,0 +1,783 @@
+/* Vista ADMIN */
+
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: palevioletred;
+    margin: 0;
+}
+
+
+#menu_lateral {
+    float: left;
+    width: 200px;
+    background-color: pink;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+#nombre_sitio {
+    color: #C97B84;
+    text-align: center;
+    font-size: 20px;
+}
+
+#menu_lateral a {
+    color: palevioletred;
+}
+
+
+#menu_lateral hr {
+    border: none;
+    border-top: 1px solid palevioletred;
+    margin: 15px 0;
+}
+
+#imagen_admin {
+    width: 160px;
+    margin-top: 40px;
+}
+
+#contenido_admin {
+    font-family: "Bebas Neue", sans-serif;
+    margin-left: 240px;
+    padding: 30px;
+}
+
+
+#bienvenida {
+    text-align: center;
+}
+
+
+#titulo_usuarios,
+#titulo_productos {
+    text-align: center;
+}
+
+#intro_usuarios,
+#intro_productos {
+    text-align: center;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+}
+
+
+.tarjeta_opcion {
+    float: left;
+    background-color: white;
+    width: 220px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border: solid 1px #C97B84;
+}
+
+img {
+    width: 80px;
+}
+
+
+.error {
+    color: red;
+}
+
+
+
+
+
+/* Vista PRINCIPAL */
+
+#header_tienda {
+    background-color: pink;
+    padding: 15px 20px;
+    border-bottom: 2px solid #C97B84;
+    overflow: hidden;
+}
+
+#header_tienda #nombre_sitio {
+    float: left;
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #C97B84;
+    text-align: left;
+}
+
+#menu_tienda {
+    float: left;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+#menu_tienda a {
+    color: palevioletred;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu_tienda a:hover {
+    text-decoration: underline;
+}
+
+#carrito_tienda {
+    float: right;
+    margin-top: 2px;
+}
+
+.boton_carrito {
+    background-color: white;
+    color: palevioletred;
+    border: 1px solid #C97B84;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.boton_carrito:hover {
+    background-color: #C97B84;
+    color: white;
+}
+
+#enlaces_usuario {
+    text-align: right;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+}
+
+#enlaces_usuario a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#enlaces_usuario a:hover {
+    color: pink;
+}
+
+#banner_hero {
+    background-color: white;
+    border: 1px solid #C97B84;
+    padding: 20px;
+    margin: 0 20px;
+}
+
+.banner_columna {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+}
+
+.banner_columna h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 36px;
+    margin-top: 0;
+    color: #C97B84;
+}
+
+.img_banner {
+    width: 100%;
+    max-height: 180px;
+    object-fit: contain;
+}
+
+.boton_tienda {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 8px 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.boton_tienda:hover {
+    background-color: palevioletred;
+    color: white;
+}
+
+#contenedor_productos {
+    margin: 0 10px;
+}
+
+.tarjeta_producto {
+    float: left;
+    width: 21%;
+    background-color: white;
+    border: 1px solid #C97B84;
+    margin: 1%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.tarjeta_producto img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    display: block;
+    margin: 0 auto;
+}
+
+.titulo_prod a {
+    color: palevioletred;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+}
+
+.titulo_prod a:hover {
+    color: #C97B84;
+}
+
+.info_prod {
+    font-size: 13px;
+    margin: 5px 0 0 0;
+    color: #333;
+}
+
+#footer_tienda {
+    background-color: white;
+    border-top: 2px solid #C97B84;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.col_footer {
+    float: left;
+    width: 33%;
+    box-sizing: border-box;
+}
+
+.col_footer a {
+    color: palevioletred;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.col_footer a:hover {
+    text-decoration: underline;
+}
+
+.col_footer input[type="text"] {
+    padding: 5px;
+    border: 1px solid #C97B84;
+}
+
+.col_footer button {
+    background-color: palevioletred;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.col_footer button:hover {
+    background-color: #C97B84;
+}
+
+
+
+
+/* Vista REGISTRAR USUARIO */
+
+#contenedor_formulario_registro {
+    width: 450px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #C97B84;
+    box-sizing: border-box;
+}
+
+.caja_registro {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 0;
+}
+
+.titulo_caja_registro {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #e0e0e0;
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#form_registro_cliente label {
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 4px;
+    margin-top: 10px;
+}
+
+#form_registro_cliente input[type="text"],
+#form_registro_cliente input[type="password"] {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+.columnas_region_comuna {
+    margin-top: 15px;
+}
+
+.col_select {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+.col_select:last-child {
+    margin-right: 0;
+}
+
+.col_select select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid black;
+    font-family: Helvetica, sans-serif;
+}
+
+.centrar_boton {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.boton_registrar {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 8px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+}
+
+.boton_registrar:hover {
+    background-color: palevioletred;
+    color: white;
+}
+
+
+
+/* Vista INICIAR SESIÓN */
+
+#cabecera_login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#logo_login {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #C97B84;
+}
+
+#titulo_empresa_login {
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#contenedor_formulario_login {
+    width: 450px;
+    margin: 0 auto 40px auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #C97B84;
+    box-sizing: border-box;
+}
+
+.caja_login {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 0;
+}
+
+.titulo_caja_login {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #e0e0e0;
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#form_login_cliente label {
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 4px;
+    margin-top: 10px;
+}
+
+#form_login_cliente input[type="text"],
+#form_login_cliente input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+.boton_iniciar_sesion {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 40px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.boton_iniciar_sesion:hover {
+    background-color: palevioletred;
+    color: white;
+}
+
+
+/* Vista CONTACTO */
+
+#contenedor_formulario_contacto {
+    width: 450px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #C97B84;
+    box-sizing: border-box;
+}
+
+.caja_contacto {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 0;
+}
+
+.titulo_caja_contacto {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #e0e0e0;
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#form_contacto_cliente label {
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 4px;
+    margin-top: 10px;
+}
+
+#form_contacto_cliente input[type="text"],
+#form_contacto_cliente textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+#form_contacto_cliente textarea {
+    resize: vertical;
+}
+
+.boton_contacto {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 8px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+}
+
+.boton_contacto:hover {
+    background-color: palevioletred;
+    color: white;
+}
+
+
+/* Vista PRODUCTOS */
+
+#titulo_catalogo_productos {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 38px;
+    margin: 20px 0 10px 0;
+    letter-spacing: 2px;
+}
+
+#contenedor_catalogo {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tarjeta_catalogo {
+    float: left;
+    width: 23%;
+    background-color: white;
+    border: 1px solid #C97B84;
+    margin: 1%;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.tarjeta_catalogo img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.titulo_prod_cat {
+    margin: 5px 0;
+}
+
+.titulo_prod_cat a {
+    color: palevioletred;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+}
+
+.titulo_prod_cat a:hover {
+    color: #C97B84;
+}
+
+.precio_prod_cat {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0 10px 0;
+}
+
+.boton_anadir {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.boton_anadir:hover {
+    background-color: palevioletred;
+    color: white;
+}
+
+
+/* Vista NOSOTROS */
+
+#titulo_nosotros {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 38px;
+    margin: 20px 0 10px 0;
+    letter-spacing: 2px;
+}
+
+#contenedor_nosotros {
+    width: 80%;
+    margin: 0 auto 30px auto;
+}
+
+.seccion_nosotros {
+    background-color: white;
+    border: 1px solid #C97B84;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.seccion_nosotros h2 {
+    font-family: "Bebas Neue", sans-serif;
+    color: #C97B84;
+    font-size: 26px;
+    margin-top: 0;
+    border-bottom: 2px solid pink;
+    padding-bottom: 5px;
+}
+
+.seccion_nosotros p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.columna_mv {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+    box-sizing: border-box;
+}
+
+.columna_mv:last-child {
+    margin-right: 0;
+}
+
+.columna_mv h3 {
+    font-family: "Bebas Neue", sans-serif;
+    color: palevioletred;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.intro_devs {
+    margin-bottom: 20px;
+}
+
+.tarjetas_devs {
+    margin-top: 15px;
+}
+
+.tarjeta_dev {
+    float: left;
+    width: 30%;
+    margin: 0 1.6%;
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.tarjeta_dev img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #C97B84;
+    margin-bottom: 10px;
+}
+
+.tarjeta_dev h3 {
+    font-family: "Bebas Neue", sans-serif;
+    color: palevioletred;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.tarjeta_dev p {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+}
+
+
+/* Vista BLOGS */
+
+#titulo_blogs {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 38px;
+    margin: 20px 0 15px 0;
+    letter-spacing: 2px;
+}
+
+#contenedor_blogs {
+    width: 80%;
+    margin: 0 auto 40px auto;
+}
+
+.tarjeta_blog {
+    background-color: white;
+    border: 1px solid #C97B84;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+}
+
+.col_blog_texto {
+    float: left;
+    width: 48%;
+    padding-right: 2%;
+    box-sizing: border-box;
+}
+
+.col_blog_imagen {
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.col_blog_imagen img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: 1px solid #000;
+    display: block;
+}
+
+.titulo_caso {
+    font-family: "Bebas Neue", sans-serif;
+    color: #000;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.descripcion_caso {
+    font-family: Helvetica, sans-serif;
+    color: #333;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.boton_ver_caso {
+    background-color: white;
+    color: black;
+    border: 1.5px solid black;
+    padding: 8px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.boton_ver_caso:hover {
+    background-color: palevioletred;
+    color: white;
+    border-color: palevioletred;
+}
