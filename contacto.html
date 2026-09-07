@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Contacto - Norbert</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Caacupe+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="js/validaciones.js"></script>
+</head>
+<body>
+
+
+    <div id="header_tienda">
+        <p id="nombre_sitio">Norbert</p>
+
+        <p id="menu_tienda">
+            <a href="pagina_principal_home.html">Home</a> |
+            <a href="productos.html">Productos</a> |
+            <a href="nosotros.html">Nosotros</a> |
+            <a href="blogs.html">Blogs</a> |
+            <a href="contacto.html">Contacto</a>
+        </p>
+
+        <div id="carrito_tienda">
+            <a href="carrito.html" class="boton_carrito">🛒 Cart (0)</a>
+        </div>
+    </div>
+
+
+
+    <!-- Enlaces de usuario -->
+    <div id="enlaces_usuario">
+        <a href="iniciar_sesion.html">Iniciar sesión</a> | 
+        <a href="registro_usuario.html">Registrar usuario</a>
+    </div>
+
+
+
+    <!-- Formulario de Contacto -->
+    <div id="contenedor_formulario_contacto">
+        <form id="form_contacto_cliente">
+            <fieldset class="caja_contacto">
+                <legend class="titulo_caja_contacto">Contáctanos</legend>
+
+                <label for="campo_nombre_contacto">NOMBRE COMPLETO</label>
+                <input type="text" id="campo_nombre_contacto" name="campo_nombre_contacto">
+                <span class="error" id="mensaje_campo_nombre_contacto"></span><br><br>
+
+                <label for="campo_correo_contacto">CORREO ELECTRÓNICO</label>
+                <input type="text" id="campo_correo_contacto" name="campo_correo_contacto">
+                <span class="error" id="mensaje_campo_correo_contacto"></span><br><br>
+
+                <label for="campo_asunto_contacto">ASUNTO</label>
+                <input type="text" id="campo_asunto_contacto" name="campo_asunto_contacto">
+                <span class="error" id="mensaje_campo_asunto_contacto"></span><br><br>
+
+                <label for="campo_mensaje_contacto">MENSAJE</label>
+                <textarea id="campo_mensaje_contacto" name="campo_mensaje_contacto" rows="5"></textarea>
+                <span class="error" id="mensaje_campo_mensaje_contacto"></span><br><br>
+
+                <div class="centrar_boton">
+                    <button type="button" onclick="procesar_contacto()" class="boton_contacto">ENVIAR MENSAJE</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+
+    
+    <!-- Pie de página -->
+    <div id="footer_tienda">
+        <div class="col_footer">
+            <p><strong>Norbert</strong></p>
+            <p>VISA | MC | AMEX</p>
+        </div>
+
+        <div class="col_footer">
+            <p>
+                <a href="productos.html?cat=labios">Labios</a> | 
+                <a href="productos.html?cat=rostro">Rostro</a> | 
+                <a href="productos.html?cat=ojos">Ojos</a>
+            </p>
+        </div>
+
+        <div class="col_footer">
+            <p>¡Boletín de noticias!</p>
+            <form action="#">
+                <input type="text" placeholder="Ingresa tu email">
+                <button type="button">Suscribirse</button>
+            </form>
+        </div>
+
+        <div style="clear: both;"></div>
+    </div>
+
+</body>
+</html>
