@@ -1,4 +1,4 @@
-// Datos de regiones y comunas
+
 var data_regiones = [
     {
         id: 1,
@@ -50,7 +50,7 @@ function actualizar_comunas() {
     select_comuna.innerHTML = html;
 }
 
-// Cargar las regiones al iniciar si el script está en la página
+
 window.onload = function() {
     cargar_regiones();
 };

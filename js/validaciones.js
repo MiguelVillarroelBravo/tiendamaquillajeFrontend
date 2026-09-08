@@ -8,11 +8,11 @@ function limpiar_errores() {
 
 
 function validar_rut_formato(rut) {
-    // Verificar longitud (7 a 9 caracteres)
+    
     if (rut.length < 7 || rut.length > 9) {
         return false;
     }
-    // Verificar que no tenga puntos ni guiones
+    
     if (rut.indexOf(".") !== -1 || rut.indexOf("-") !== -1) {
         return false;
     }
@@ -25,7 +25,7 @@ function validar_correo(correo) {
     var dominios_permitidos = ["@duoc.cl", "@profesor.duoc.cl", "@gmail.com"];
     for (var i = 0; i < dominios_permitidos.length; i++) {
         var dominio = dominios_permitidos[i];
-        // Verificar si el correo termina con el dominio permitido
+        
         if (correo.indexOf(dominio) !== -1 && correo.indexOf(dominio) === (correo.length - dominio.length)) {
             return true;
         }
@@ -54,7 +54,7 @@ function procesar_usuario() {
     
     if (valido) {
         alert("Usuario procesado correctamente.");
-        // Aquí se enviaría el formulario
+        
     }
 }
 
@@ -84,7 +84,7 @@ function procesar_producto() {
 
 
 
-// Helper para validar dominios permitidos
+
 function es_correo_valido(correo) {
     var dominiosPermitidos = ['@duoc.cl', '@profesor.duoc.cl', '@gmail.com'];
     for (var i = 0; i < dominiosPermitidos.length; i++) {
@@ -98,7 +98,7 @@ function es_correo_valido(correo) {
 
 
 
-// VALIDACIÓN INICIO DE SESIÓN
+
 
 function validar_login() {
     var correo = document.getElementById("campo_correo_login").value.trim();
@@ -113,7 +113,7 @@ function validar_login() {
 
     var valido = true;
 
-    // Validación Correo
+    
     if (correo === "") {
         errorCorreo.innerText = "El correo es requerido.";
         valido = false;
@@ -125,7 +125,7 @@ function validar_login() {
         valido = false;
     }
 
-    // Validación Contraseña
+    
     if (clave === "") {
         errorClave.innerText = "La contraseña es requerida.";
         valido = false;
@@ -142,7 +142,7 @@ function validar_login() {
 }
 
 
-// VALIDACIÓN CONTACTO
+
 
 function procesar_contacto() {
     var nombre = document.getElementById("campo_nombre_contacto").value.trim();
@@ -153,14 +153,14 @@ function procesar_contacto() {
     var errorCorreo = document.getElementById("mensaje_campo_correo_contacto");
     var errorComentario = document.getElementById("mensaje_campo_mensaje_contacto");
 
-    // Limpiar errores previos
+    
     errorNombre.innerText = "";
     errorCorreo.innerText = "";
     errorComentario.innerText = "";
 
     var valido = true;
 
-    // Nombre
+    
     if (nombre === "") {
         errorNombre.innerText = "El nombre es requerido.";
         valido = false;
@@ -169,7 +169,7 @@ function procesar_contacto() {
         valido = false;
     }
 
-    // Correo
+    
     if (correo !== "") {
         if (correo.length > 100) {
             errorCorreo.innerText = "El correo no debe superar los 100 caracteres.";
@@ -180,7 +180,7 @@ function procesar_contacto() {
         }
     }
 
-    // Comentario
+    
     if (comentario === "") {
         errorComentario.innerText = "El comentario es requerido.";
         valido = false;

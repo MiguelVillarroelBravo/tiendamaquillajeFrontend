@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Carrito de Compras - Norbert</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Caacupe+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div id="header_tienda">
+        <p id="nombre_sitio">Norbert</p>
+
+        <p id="menu_tienda">
+            <a href="pagina_principal_home.html">Home</a> |
+            <a href="productos.html">Productos</a> |
+            <a href="nosotros.html">Nosotros</a> |
+            <a href="blogs.html">Blogs</a> |
+            <a href="contacto.html">Contacto</a>
+        </p>
+
+        <div id="carrito_tienda">
+            <a href="carrito.html" class="boton_carrito">🛒 Cart (0)</a>
+        </div>
+    </div>
+
+    
+    <div id="enlaces_usuario">
+        <a href="iniciar_sesion.html">Iniciar sesión</a> | 
+        <a href="registro_usuario.html">Registrar usuario</a>
+    </div>
+
+    
+    <p id="volver_productos">
+        <a href="productos.html">← Volver a Productos</a>
+    </p>
+
+    <h1 id="titulo_detalle_producto">Mi Carrito de Compras</h1>
+
+    
+    <div id="contenedor_detalle_producto">
+        
+    </div>
+
+    <p id="total_carrito"></p>
+
+    <button type="button" onclick="vaciar_carrito()">Vaciar carrito</button>
+
+    
+    <div id="footer_tienda">
+        <div class="col_footer">
+            <p><strong>Norbert</strong></p>
+            <p>VISA | MC | AMEX</p>
+        </div>
+
+        <div class="col_footer">
+            <p>
+                <a href="productos.html?cat=labios">Labios</a> | 
+                <a href="productos.html?cat=rostro">Rostro</a> | 
+                <a href="productos.html?cat=ojos">Ojos</a>
+            </p>
+        </div>
+
+        <div class="col_footer">
+            <p>¡Boletín de noticias!</p>
+            <form action="#">
+                <input type="text" placeholder="Ingresa tu email">
+                <button type="button">Suscribirse</button>
+            </form>
+        </div>
+
+        <div style="clear: both;"></div>
+    </div>
+
+    <script src="js/detalle_producto.js"></script>
+</body>
+</html>

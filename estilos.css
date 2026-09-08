@@ -87,7 +87,7 @@ img {
 
 
 
-/* Vista PRINCIPAL */
+
 
 #header_tienda {
     background-color: pink;
@@ -286,7 +286,7 @@ img {
 
 
 
-/* Vista REGISTRAR USUARIO */
+
 
 #contenedor_formulario_registro {
     width: 450px;
@@ -376,7 +376,7 @@ img {
 
 
 
-/* Vista INICIAR SESIÓN */
+
 
 #cabecera_login {
     text-align: center;
@@ -462,7 +462,7 @@ img {
 }
 
 
-/* Vista CONTACTO */
+
 
 #contenedor_formulario_contacto {
     width: 450px;
@@ -529,7 +529,7 @@ img {
 }
 
 
-/* Vista PRODUCTOS */
+
 
 #titulo_catalogo_productos {
     font-family: "Bebas Neue", sans-serif;
@@ -605,7 +605,7 @@ img {
 }
 
 
-/* Vista NOSOTROS */
+
 
 #titulo_nosotros {
     font-family: "Bebas Neue", sans-serif;
@@ -703,7 +703,7 @@ img {
 }
 
 
-/* Vista BLOGS */
+
 
 #titulo_blogs {
     font-family: "Bebas Neue", sans-serif;
@@ -780,4 +780,55 @@ img {
     background-color: palevioletred;
     color: white;
     border-color: palevioletred;
+}
+
+#volver_blogs {
+    width: 80%;
+    margin: 15px auto 0 auto;
+}
+
+#volver_blogs a {
+    color: palevioletred;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#volver_blogs a:hover {
+    text-decoration: underline;
+}
+
+#contenedor_detalle_blog {
+    width: 80%;
+    margin: 15px auto 40px auto;
+    background-color: white;
+    border: 1px solid #C97B84;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#imagen_detalle_blog {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+#titulo_detalle_blog {
+    font-family: "Bebas Neue", sans-serif;
+    color: #000;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.parrafo_detalle_blog {
+    font-family: Helvetica, sans-serif;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 15px;
 }
