@@ -1,39 +1,43 @@
-# Norbert - Tienda de Maquillaje Online 💄✨
+# Norbert - Tienda de Maquillaje Online
 
-Este repositorio está enfocado en el desarrollo de una tienda en línea especializada en belleza, maquillaje y cuidado personal llamada **Norbert**.
+Repositorio del proyecto **Norbert**, una tienda en línea enfocada en productos de belleza, maquillaje y cuidado personal. La aplicación tiene en consideración tanto la experiencia del usuario/cliente como la administración del sistema.
 
-## 📋 Descripción del Proyecto
+---
 
-La aplicación está diseñada siguiendo los lineamientos de la Especificación de Requisitos de Software (ERS) y se divide en dos módulos principales:
-1. **Módulo Tienda (Público):** Interfaz para los clientes donde pueden explorar el catálogo de productos (labios, rostro, ojos), leer noticias en el blog, contactar a la empresa, registrarse e iniciar sesión.
-2. **Módulo Administrador (Privado):** Panel de control (Dashboard) destinado a la gestión del inventario (crear, editar y listar productos) y la administración de los usuarios registrados en el sistema.
+## Descripción del Proyecto
 
-## 🚀 Características Principales
+El sistema se divide en dos módulos principales:
 
-* **Catálogo de Cosméticos:** Visualización de productos con imágenes, precios y clasificación por categorías.
-* **Simulación de Sesión y Carrito:** Implementación planificada de `localStorage` para guardar temporalmente los datos del carrito y mantener la sesión del usuario.
-* **Validaciones de Formularios en el Cliente:** Scripts en JavaScript para asegurar la integridad de los datos ingresados (ej. formato de RUT chileno sin puntos ni guion, longitud de contraseñas, y correos con dominios específicos).
-* **Carga Dinámica de Datos:** Selectores de Región y Comuna que se actualizan dinámicamente mediante eventos.
-* **Diseño Responsivo:** Estructura pensada para adaptarse a distintos tamaños de pantalla y navegadores modernos.
+1. **Módulo Tienda (Público):** Interfaz para clientes donde pueden ver el catálogo (labios, rostro, ojos), revisar los artículos del blog, ponerse en contacto, registrarse e iniciar sesión.
+2. **Módulo Administrador (Privado):** Panel de control (Dashboard) enfocado en la gestión de inventario (crear, editar y listar productos) y la administración de los usuarios registrados.
 
-## 🛠️ Tecnologías Utilizadas
+---
 
-* HTML
-* CSS
-* JavaScript
+## Características Principales
 
-## 📂 Estructura de Archivos Destacada
+* **Catálogo de Cosméticos:** Carga y despliegue dinámico de productos con sus imágenes, precios y categorías.
+* **Manejo de Sesión y Carrito:** Uso de `localStorage` para persistir los elementos del carrito y la sesión activa.
+* **Validaciones Frontend:** Scripts en JavaScript para validar datos antes de enviar formularios (formato de RUT chileno, longitud de claves y dominios permitidos para correo como `@duoc.cl`, `@profesor.duoc.cl` y `@gmail.com`).
+* **Carga Dinámica:** Selectores de Región y Comuna vinculados que se rellenan mediante eventos JS.
+* **Diseño e Interfaz:** Maquetación limpia en CSS, adaptada para funcionar correctamente en navegadores modernos.
 
-* `pagina_principal_home.html`: Landing page con banner promocional y productos destacados.
-* `productos.html` / `detalle_producto.html`: Vistas del catálogo.
-* `iniciar_sesion.html` / `registro_usuario.html`: Flujos de autenticación.
-* `homeAdmin.html`: Dashboard principal del administrador.
-* `Producto.html` / `mostrar_producto.html` / `nuevo_producto.html`: Vistas CRUD de inventario.
-* `Usuario.html` / `mostrar_usuario.html` / `nuevo_usuario.html`: Vistas CRUD de cuentas de usuario.
+---
 
-## ⚙️ Instalación y Uso
+## Tecnologías Utilizadas
 
-1. Clona este repositorio en tu máquina local.
-2. Al ser un proyecto frontend estático en esta etapa, no requiere instalación de paquetes adicionales.
-3. Abre el archivo `pagina_principal_home.html` directamente en tu navegador web.
-4. Asegúrate de tener JavaScript habilitado en tu navegador para el correcto funcionamiento de las validaciones y selectores dinámicos.
+* **HTML5**
+* **CSS3**
+* **JavaScript (Vanilla JS)**
+
+---
+
+## Instalación y Ejecución Local
+
+Para levantar el proyecto en un servidor local utilizando **XAMPP**:
+
+1. Descarga o clona este repositorio dentro de la carpeta `htdocs` de tu instalación de XAMPP:
+`C:\xampp\htdocs\tiendamaquillajeFrontend-main`
+2. Abre el **XAMPP Control Panel** e inicia el servicio de **Apache**.
+3. Ingresa a la siguiente dirección desde tu navegador:
+
+[http://localhost/tiendamaquillajeFrontend-main/pagina_principal_home.html](http://localhost/tiendamaquillajeFrontend-main/pagina_principal_home.html)
